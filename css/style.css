@@ -358,3 +358,66 @@ a {
 .bottom-nav a.active {
   color: #ff4d6d;
 }
+.stranger-wrapper{
+  max-width:600px;
+  margin:40px auto;
+  background:white;
+  border-radius:16px;
+  padding:20px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.stranger-header{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+}
+
+.chat-box{
+  height:300px;
+  overflow-y:auto;
+  border:1px solid #eee;
+  border-radius:10px;
+  padding:10px;
+  margin-bottom:10px;
+}
+
+.msg{
+  margin:6px 0;
+}
+
+.me{
+  text-align:right;
+  color:#ff4d6d;
+}
+
+.stranger{
+  text-align:left;
+}
+
+.chat-input{
+  display:flex;
+  gap:8px;
+}
+
+.chat-input input{
+  flex:1;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ddd;
+}
+
+.chat-actions{
+  display:flex;
+  justify-content:space-between;
+  margin-top:10px;
+}
+.gender-filter{
+  margin-bottom:10px;
+}
+
+.typing{
+  font-size:12px;
+  color:#888;
+  margin:4px 0 8px;
+}
