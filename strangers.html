@@ -1,27 +1,55 @@
-<div class="stranger-header">
-  <h2>Stranger Chat</h2>
-  <span id="status">Connecting...</span>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DilSet Stranger Chat</title>
 
-<div class="gender-filter">
-  <label>Connect with:</label>
-  <select id="genderPref">
-    <option value="any">Anyone</option>
-    <option value="female">Female</option>
-    <option value="male">Male</option>
-  </select>
-</div>
+  <link rel="stylesheet" href="../css/style.css"/>
+</head>
+<body>
 
-<div id="chatBox" class="chat-box"></div>
-<div id="typing" class="typing"></div>
+  <div class="container" style="max-width:700px;margin-top:30px;margin-bottom:80px;">
 
-<div class="chat-input">
-  <input id="msgInput" placeholder="Type message..." />
-  <button id="sendBtn">Send</button>
-</div>
+    <!-- HEADER -->
+    <div class="stranger-header">
+      <h2>Stranger Chat</h2>
+      <span id="status">Connecting...</span>
+    </div>
 
-<div class="chat-actions">
-  <button id="nextBtn" class="btn btn-outline">Next</button>
-  <button id="reportBtn" class="btn btn-outline">Report</button>
-  <button id="stopBtn" class="btn btn-primary">Stop</button>
-</div>
+    <!-- GENDER FILTER -->
+    <div class="gender-filter">
+      <label>Connect with:</label>
+      <select id="genderPref">
+        <option value="any">Anyone</option>
+        <option value="female">Female</option>
+        <option value="male">Male</option>
+      </select>
+    </div>
+
+    <!-- CHAT BOX -->
+    <div id="chatBox" class="chat-box"></div>
+
+    <!-- TYPING -->
+    <div id="typing" class="typing"></div>
+
+    <!-- INPUT -->
+    <div class="chat-input">
+      <input id="msgInput" placeholder="Type message..." />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <!-- ACTIONS -->
+    <div class="chat-actions">
+      <button id="nextBtn" class="btn btn-outline">Next</button>
+      <button id="reportBtn" class="btn btn-outline">Report</button>
+      <button id="stopBtn" class="btn btn-primary">Stop</button>
+    </div>
+
+  </div>
+
+  <!-- STRANGERS SCRIPT -->
+  <script type="module" src="../js/strangers/strangers.js"></script>
+
+</body>
+</html>
